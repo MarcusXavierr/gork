@@ -154,11 +154,6 @@ async def process_private_message(
     )
 
     if not is_whitelisted:
-        await send_message(
-            remote_id,
-            "⚠️ Você não tem permissão para usar este bot. Entre em contato com o administrador.",
-            message_id
-        )
         return
 
     if "audio_message" in context.keys():
