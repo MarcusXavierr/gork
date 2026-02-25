@@ -9,7 +9,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from database.models.base import User
 from database.models.content import Message
 from database.models.manager import Model
-from database.operations.base import UserRepository
 from database.operations.content import MessageRepository
 from database.operations.manager import ModelRepository
 from api.routes.webhook.evolution.functions import (
